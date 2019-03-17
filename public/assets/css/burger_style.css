@@ -1,4 +1,4 @@
-/* .footer {
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -7,7 +7,7 @@
   line-height: 60px;
   background-color: #778C6A;
   color: white;
-} */
+}
 
 .footer-margin{
   height:100px;
