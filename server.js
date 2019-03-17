@@ -1,6 +1,6 @@
 //Dependencies
 var express = require("express");
-var path = require ("path");
+var path = require("path");
 
 //Set up express
 var app = express();
@@ -16,13 +16,13 @@ app.use(express.json());
 
 //Set Handlebars
 var exphbs = require("express-handlebars");
-// app.set("views", path.join(__dirname, "/views"));
+app.set("views", path.join(__dirname, "/views"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 
 //Set routes and use them
-var routes = require("./controllers/burgers_controller");
+var routes = require("./controllers/burgers_controller.js");
 app.use("/",routes);
 
 //Start our server so it can listen for client requests
