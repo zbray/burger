@@ -1,6 +1,6 @@
 <div class="container">
   <div class="jumbotron">
-    <h1>Veggie Burgers?</h1>
+    <h1>Veggie Burgers</h1>
   </div>
 
 
@@ -10,10 +10,17 @@
     <div class="col-md-6">
       <h4>Burgers Ready to Eat</h4>
       <ul>
-        {{#each burgers}}
-        {{#unless devoured}}
-        {{> burgers/burger-block devoured=true}}
-        {{/unless}}
+
+        {{#each burger}}
+        {{!-- {{#unless devoured}} --}}
+        <p>
+          {{burger.id}}
+          testing
+
+          {{!-- {{this.id}} --}}
+          {{!-- {{> burgers/burger-block devoured=true}} --}}
+        </p>
+        {{!-- {{/unless}} --}}
         {{/each}}
       </ul>
     </div>
@@ -34,11 +41,11 @@
     <div class="col-md-12" align="center">
 
       <h3>Add a burger</h3>
-<h5>
-  {{#each burgers}}
- <li>Hello, {{burger.burger_name}}!</li>
-{{/each}}
-</h5>
+      <h5>
+        {{#each burgers}}
+        <li>Hello, {{burger.burger_name}}!</li>
+        {{/each}}
+      </h5>
       <form class="create-form">
 
         <div class="form-group">
@@ -55,8 +62,11 @@
       </form>
 
 
+
+
+
     </div>
-  </div class ="footer-margin">
+  </div class="footer-margin">
   <footer class="footer">
     <div class="container">
       <span class="text">&copy; 2018 zzzbray</span>

@@ -1,6 +1,6 @@
 //Dependencies
 var express = require("express");
-var path = require("path");
+// var path = require("path");
 var connection = require("../burger/config/connection")
 var bodyParser = require("body-parser");
 //Set up express
@@ -36,7 +36,7 @@ app.set("view engine", "handlebars");
 
 //Set routes and use them
 var routes = require("./controllers/burgers_controller.js");
-app.use("/", routes);
+app.use(routes);
 
 //Start our server so it can listen for client requests
 app.listen(PORT, function () {
