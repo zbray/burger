@@ -7,9 +7,9 @@
   /* background-color: #778C6A;
   /* color: white; */
 }
-
-
-
-.body{
-  background-color: yellow;
+.jumbotron {
+  background-color: lightblue;
 }
+
+
+body {background-color: lightblue;}
