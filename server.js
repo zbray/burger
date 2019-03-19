@@ -39,5 +39,5 @@ var routes = require("./controllers/burgers_controller.js");
 app.use(routes);
 
 //Start our server so it can listen for client requests
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 app.listen(PORT);
