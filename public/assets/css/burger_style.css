@@ -2,17 +2,14 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-
   height: 60px;
   line-height: 60px;
   /* background-color: #778C6A;
-  color: white; */
+  /* color: white; */
 }
 
-.footer-margin{
-  height:100px;
-}
+
 
 .body{
-  color: yellow;
+  background-color: yellow;
 }
