@@ -39,6 +39,6 @@ var routes = require("./controllers/burgers_controller.js");
 app.use(routes);
 
 //Start our server so it can listen for client requests
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 8080, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
