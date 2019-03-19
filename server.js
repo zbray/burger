@@ -13,7 +13,7 @@ connection.connect(function (err) {
   }
   console.log("connected as id " + connection.threadId);
 });
-var PORT = process.env.PORT || 8080;
+
 
 //Allow content from the app to be pulled from the "public" directory
 // app.use(express.static(path.join(__dirname + ".../public")));
@@ -39,6 +39,5 @@ var routes = require("./controllers/burgers_controller.js");
 app.use(routes);
 
 //Start our server so it can listen for client requests
-app.listen(PORT, function () {
-  console.log("Server listening on: http://localhost:" + PORT);
-})
+var PORT = process.env.PORT || 3000;
+app.listen(PORT);
